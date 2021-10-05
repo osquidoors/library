@@ -1,11 +1,5 @@
 # see https://symfony.com/doc/current/reference/configuration/framework.html
 framework:
-
-    serializer:
-        enabled: true
-        mapping:
-                paths: ['%kernel.project_dir%/config/serializer']
-
     secret: '%env(APP_SECRET)%'
     #csrf_protection: true
     http_method_override: false
@@ -22,6 +16,11 @@ framework:
     #fragments: true
     php_errors:
         log: true
+
+    serializer:
+        enabled: true
+        mapping:
+                paths: ['%kernel.project_dir%/config/serializer']
 
 when@test:
     framework:

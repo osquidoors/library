@@ -63,7 +63,7 @@ class LibraryController extends AbstractController {
     }
 
     /**
-     * @Route("books", name="books_get")
+     * @Route("abooks", name="books_get")
      */
     public function list2(BookRepository $repoBook) {
         $books = $repoBook->findAll();
